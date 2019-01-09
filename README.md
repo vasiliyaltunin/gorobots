@@ -32,7 +32,7 @@ import (
             
 func main() {
     r := gin.Default()
-    r.Use(gorobot.New("./static/robots.txt")) // set gorobots middleware 
+    r.Use(gorobots.New("./static/robots/robots.txt"))
 
     r.Run(":8080")
 }
